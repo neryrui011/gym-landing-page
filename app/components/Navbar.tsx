@@ -1,9 +1,39 @@
+"use client";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 
 export default function Navbar() {
+  const [isTransparent, setIsTransparent] = useState(true);
+
+  useEffect(() => {
+    // Dynamically detect the home hero section explicitly
+    const heroEl = document.getElementById("home");
+    if (!heroEl) {
+      // Hard fallback if not on Home screen (e.g. Shop screen) enforcing black navbar
+      setIsTransparent(false);
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsTransparent(entry.isIntersecting);
+      },
+      {
+        root: null,
+        // The navbar is roughly 68px tall. We trigger the intersection exactly when the hero hides behind it.
+        rootMargin: "-68px 0px 0px 0px",
+        threshold: 0,
+      }
+    );
+
+    observer.observe(heroEl);
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <nav
-      className="fixed top-0 left-0 right-0 z-[100] bg-transparent border-none"
+      className={`fixed top-0 left-0 right-0 z-[100] border-none transition-colors duration-300 ${isTransparent ? "bg-transparent" : "bg-black"
+        }`}
     >
       <div
         style={{
@@ -18,7 +48,7 @@ export default function Navbar() {
       >
         {/* Logo */}
         <a
-          href="#"
+          href="/"
           style={{
             fontFamily: "var(--font-display)",
             fontSize: "28px",

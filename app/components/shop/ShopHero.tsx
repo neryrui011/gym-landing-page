@@ -3,13 +3,14 @@ import Link from "next/link";
 export default function ShopHero() {
   return (
     <section
+      id="shop-hero"
       style={{
         position: "relative",
         height: "320px",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        backgroundImage: "url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1600&q=80')",
+        backgroundImage: "url('/image/1000s.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
