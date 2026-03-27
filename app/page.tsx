@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Ticker from "./components/Ticker";
+import RealResults from "./components/RealResults";
 import WhyChooseUs from "./components/WhyChooseUs";
 import AboutGym from "./components/AboutGym";
 import Coaches from "./components/Coaches";
@@ -37,6 +38,7 @@ export default function Home() {
       <main>
         <Hero />
         <Ticker />
+        <RealResults />
         <WhyChooseUs />
         <AboutGym />
         <Coaches />
