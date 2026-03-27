@@ -137,7 +137,7 @@ export default function WhyChooseUs() {
                         letterSpacing: "0.06em",
                       }}
                     >
-                      🏋️ GymTeam
+                      GymTeam
                     </div>
                   </div>
                   {/* Body */}

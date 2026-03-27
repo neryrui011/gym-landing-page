@@ -70,7 +70,7 @@ export default function AboutGym() {
                 marginBottom: "24px",
               }}
             >
-              🏆 10 YEARS
+              10 YEARS
             </div>
 
             <p

@@ -1,5 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
+
+@theme {
+  --font-body: var(--font-poppins);
+  --font-heading: var(--font-modica);
+}
+
+@layer base {
+  /* Exclusively force Modica on Headings */
+  header, h1, h2, h3 {
+    font-family: var(--font-modica) !important;
+  }
+
+  /* Navbar Typography Routing */
+  nav {
+    font-family: var(--font-modica) !important;
+  }
+  nav a {
+    font-family: var(--font-modica) !important; /* Forces Logo to Modica */
+  }
+  nav .nav-links a, nav button {
+    font-family: var(--font-poppins) !important; /* Reverts links/buttons to Poppins */
+  }
+}
 
 :root {
   --color-bg:       #0A0A0A;
@@ -9,11 +31,13 @@
   --color-text:     #FFFFFF;
   --color-muted:    #A0A0A0;
   --color-border:   rgba(255,255,255,0.08);
-  --font-display:   'Bebas Neue', sans-serif;
-  --font-body:      'Barlow', sans-serif;
   --radius:         8px;
   --transition:     0.3s ease;
   --max-width:      1200px;
+
+  /* Deep Poppins Injection for all inherited/inline contexts */
+  --font-display:   var(--font-poppins);
+  --font-body:      var(--font-poppins);
 }
 
 *, *::before, *::after {

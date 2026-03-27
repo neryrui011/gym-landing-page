@@ -28,7 +28,7 @@ export default function Hero() {
       {/* Content */}
       <div style={{ position: "relative", zIndex: 1, padding: "0 24px", maxWidth: "900px", margin: "0 auto" }}>
         <h1
-          className="reveal visible"
+          className="reveal visible font-bold italic"
           style={{
             fontFamily: "var(--font-display)",
             fontSize: "clamp(52px, 10vw, 80px)",

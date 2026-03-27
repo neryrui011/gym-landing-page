@@ -214,7 +214,7 @@ export default function Pricing() {
                 whiteSpace: "nowrap",
               }}
             >
-              ⭐ MOST POPULAR
+              MOST POPULAR
             </div>
             <h3
               style={{

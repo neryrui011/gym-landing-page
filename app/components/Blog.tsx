@@ -108,7 +108,7 @@ export default function Blog() {
                 </span>
                 <h3
                   style={{
-                    fontWeight: 700,
+                    fontWeight: 500,
                     fontSize: "16px",
                     lineHeight: 1.4,
                     marginBottom: "8px",
