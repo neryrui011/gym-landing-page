@@ -16,6 +16,8 @@ export default function Ticker() {
         {/* Duplicate for seamless loop */}
         <span
           style={{
+            flexShrink: 0,
+            whiteSpace: "nowrap",
             color: "#000",
             fontFamily: "var(--font-body)",
             fontWeight: 700,

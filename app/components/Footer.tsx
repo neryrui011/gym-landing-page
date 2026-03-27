@@ -78,27 +78,17 @@ export default function Footer() {
                 <button
                   key={i}
                   aria-label={`Social media ${i}`}
+                  className="text-[var(--color-muted)] border border-[var(--color-border)] transition-all duration-200 hover:border-[#C8FF00] hover:text-[#C8FF00]"
                   style={{
                     width: "36px",
                     height: "36px",
-                    border: "1px solid var(--color-border)",
                     borderRadius: "50%",
                     background: "transparent",
-                    color: "var(--color-muted)",
                     fontSize: "16px",
                     cursor: "pointer",
-                    transition: "border-color 0.2s, color 0.2s",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                  }}
-                  onMouseEnter={(e) => {
-                    (e.currentTarget as HTMLButtonElement).style.borderColor = "var(--color-accent)";
-                    (e.currentTarget as HTMLButtonElement).style.color = "var(--color-accent)";
-                  }}
-                  onMouseLeave={(e) => {
-                    (e.currentTarget as HTMLButtonElement).style.borderColor = "var(--color-border)";
-                    (e.currentTarget as HTMLButtonElement).style.color = "var(--color-muted)";
                   }}
                 >
                   {icon}
@@ -128,18 +118,11 @@ export default function Footer() {
                   <li key={link}>
                     <a
                       href="#"
+                      className="text-[var(--color-muted)] transition-colors duration-200 hover:text-[#C8FF00]"
                       style={{
-                        color: "var(--color-muted)",
                         textDecoration: "none",
                         fontSize: "13px",
-                        transition: "color 0.2s",
                       }}
-                      onMouseEnter={(e) =>
-                        ((e.target as HTMLElement).style.color = "var(--color-text)")
-                      }
-                      onMouseLeave={(e) =>
-                        ((e.target as HTMLElement).style.color = "var(--color-muted)")
-                      }
                     >
                       {link}
                     </a>
@@ -220,18 +203,11 @@ export default function Footer() {
               <a
                 key={item}
                 href="#"
+                className="text-[var(--color-muted)] transition-colors duration-200 hover:text-[#C8FF00]"
                 style={{
-                  color: "var(--color-muted)",
                   textDecoration: "none",
                   fontSize: "12px",
-                  transition: "color 0.2s",
                 }}
-                onMouseEnter={(e) =>
-                  ((e.target as HTMLElement).style.color = "var(--color-text)")
-                }
-                onMouseLeave={(e) =>
-                  ((e.target as HTMLElement).style.color = "var(--color-muted)")
-                }
               >
                 {item}
               </a>

@@ -73,19 +73,7 @@ export default function Blog() {
                 <img
                   src={a.img}
                   alt={a.title}
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "cover",
-                    transition: "transform 0.4s ease",
-                    display: "block",
-                  }}
-                  onMouseEnter={(e) =>
-                    ((e.currentTarget as HTMLImageElement).style.transform = "scale(1.05)")
-                  }
-                  onMouseLeave={(e) =>
-                    ((e.currentTarget as HTMLImageElement).style.transform = "scale(1)")
-                  }
+                  className="hover:scale-105 block w-full h-full object-cover transition-transform duration-400 ease-in-out"
                 />
               </div>
               {/* Body */}

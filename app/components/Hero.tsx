@@ -3,8 +3,8 @@ export default function Hero() {
     <section
       id="home"
       style={{
-        height: "calc(100vh - 44px)",
-        minHeight: "600px",
+        height: "calc(100dvh - 44px)",
+        minHeight: "min(600px, calc(100dvh - 44px))",
         position: "relative",
         display: "flex",
         alignItems: "center",
@@ -31,7 +31,7 @@ export default function Hero() {
           className="reveal visible font-bold italic"
           style={{
             fontFamily: "var(--font-display)",
-            fontSize: "clamp(52px, 10vw, 80px)",
+            fontSize: "clamp(36px, 10vw, 80px)",
             lineHeight: 1.0,
             letterSpacing: "0.04em",
             color: "var(--color-text)",
