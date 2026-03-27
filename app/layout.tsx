@@ -38,12 +38,12 @@ const modica = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "GymTeam — Work With Professionals",
+  title: "GYMTEAM",
   description:
-    "GymTeam is a premium fitness gym offering expert coaching, flexible schedules, and top-tier equipment. Start your journey today.",
+    "GYMTEAM is a premium fitness gym offering expert coaching, flexible schedules, and top-tier equipment. Start your journey today.",
   keywords: "gym, fitness, coaching, training, gymteam",
   openGraph: {
-    title: "GymTeam — Work With Professionals",
+    title: "GYMTEAM",
     description: "Premium fitness gym with expert coaching and top-tier equipment.",
     type: "website",
   },
