@@ -77,7 +77,7 @@ export default function Footer() {
               ].map((icon, i) => (
                 <button
                   key={i}
-                  aria-label={`Social media ${i}`}
+                  aria-label={["Facebook", "Instagram", "Google", "TikTok"][i]}
                   className="text-[var(--color-muted)] border border-[var(--color-border)] transition-all duration-200 hover:border-[#C8FF00] hover:text-[#C8FF00]"
                   style={{
                     width: "36px",

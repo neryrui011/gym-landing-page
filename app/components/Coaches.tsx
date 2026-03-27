@@ -28,6 +28,7 @@ const coaches = [
 export default function Coaches() {
   return (
     <section
+      id="coaches"
       style={{
         background: "var(--color-bg-alt)",
         padding: "96px 24px",

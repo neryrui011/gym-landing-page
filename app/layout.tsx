@@ -41,11 +41,19 @@ export const metadata: Metadata = {
   title: "GYMTEAM",
   description:
     "GYMTEAM is a premium fitness gym offering expert coaching, flexible schedules, and top-tier equipment. Start your journey today.",
-  keywords: "gym, fitness, coaching, training, gymteam",
+  keywords: "gym, fitness, coaching, training, gymteam, powerlifting, crossfit, cardio, personal training",
+  robots: "index, follow",
   openGraph: {
-    title: "GYMTEAM",
+    title: "GYMTEAM — Work With Professionals",
     description: "Premium fitness gym with expert coaching and top-tier equipment.",
     type: "website",
+    locale: "en_US",
+    siteName: "GYMTEAM",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "GYMTEAM — Work With Professionals",
+    description: "Premium fitness gym with expert coaching and top-tier equipment.",
   },
 };
 

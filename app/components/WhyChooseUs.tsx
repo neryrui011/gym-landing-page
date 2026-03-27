@@ -44,6 +44,7 @@ export default function WhyChooseUs() {
 
   return (
     <section
+      id="why-choose-us"
       style={{
         background: "var(--color-bg-alt)",
         padding: "96px 24px",
