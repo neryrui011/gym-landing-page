@@ -14,13 +14,13 @@ const coaches = [
   {
     name: "Savannah Nguyen",
     role: "Yoga & Mobility",
-    img: "https://images.unsplash.com/photo-1518310383802-640c2de311b2?w=400&q=80",
+    img: "/image/Gemini_Generated_Image_f7wp8rf7wp8rf7wp-min.png",
     socials: ["🐦", "📸", "💼"],
   },
   {
     name: "Kathryn Murphy",
     role: "Powerlifting Coach",
-    img: "https://images.unsplash.com/photo-1579758629938-03607ccdbaba?w=400&q=80",
+    img: "/image/Gemini_Generated_Image_4tft0k4tft0k4tft-min.png",
     socials: ["🐦", "📸", "💼"],
   },
 ];
@@ -113,7 +113,7 @@ export default function Coaches() {
                         <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path>
                       </svg>
                     </li>
-                
+
                     {/* TikTok */}
                     <li className="group relative bg-white rounded-full w-[40px] h-[40px] text-[18px] flex justify-center items-center flex-col shadow-[0_10px_10px_rgba(0,0,0,0.1)] cursor-pointer text-gray-700 transition-all duration-200 ease-[cubic-bezier(0.68,-0.55,0.265,1.55)] hover:bg-[#000000] hover:text-white">
                       <span className="absolute top-0 text-[12px] bg-white text-white px-2 py-1 rounded-[5px] shadow-[0_10px_10px_rgba(0,0,0,0.1)] opacity-0 pointer-events-none transition-all duration-300 ease-[cubic-bezier(0.68,-0.55,0.265,1.55)] group-hover:-top-[35px] group-hover:opacity-100 group-hover:pointer-events-auto group-hover:bg-[#000000] group-hover:[text-shadow:0px_-1px_0px_rgba(0,0,0,0.1)]">
@@ -121,10 +121,10 @@ export default function Coaches() {
                         <div className="absolute w-2 h-2 bg-white -bottom-[3px] left-1/2 -translate-x-1/2 rotate-45 transition-all duration-300 ease-[cubic-bezier(0.68,-0.55,0.265,1.55)] group-hover:bg-[#000000]"></div>
                       </span>
                       <svg viewBox="0 0 448 512" height="1.2em" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/>
+                        <path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
                       </svg>
                     </li>
-                
+
                     {/* Instagram */}
                     <li className="group relative bg-white rounded-full w-[40px] h-[40px] text-[18px] flex justify-center items-center flex-col shadow-[0_10px_10px_rgba(0,0,0,0.1)] cursor-pointer text-gray-700 transition-all duration-200 ease-[cubic-bezier(0.68,-0.55,0.265,1.55)] hover:bg-[#e4405f] hover:text-white">
                       <span className="absolute top-0 text-[12px] bg-white text-white px-2 py-1 rounded-[5px] shadow-[0_10px_10px_rgba(0,0,0,0.1)] opacity-0 pointer-events-none transition-all duration-300 ease-[cubic-bezier(0.68,-0.55,0.265,1.55)] group-hover:-top-[35px] group-hover:opacity-100 group-hover:pointer-events-auto group-hover:bg-[#e4405f] group-hover:[text-shadow:0px_-1px_0px_rgba(0,0,0,0.1)]">
